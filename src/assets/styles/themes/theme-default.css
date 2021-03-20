@@ -1,0 +1,30 @@
+:root {
+    --firstColor: #0E2837;
+    --secondColor: #1CC3B1;
+    --lightGrey: #ede8e8;
+    --darkGrey: #434446;
+}
+
+.color-first {
+    color: var(--firstColor);
+}
+
+.color-second {
+    color: var(--secondColor);
+}
+
+.bg-first {
+    background-color: var(--firstColor);
+}
+
+.bg-second {
+    background-color: var(--secondColor);
+}
+
+.bg-lightGrey {
+    background-color: var(--lightGrey);
+}
+
+.bg-darkGrey {
+    background-color: var(--darkGrey);
+}
