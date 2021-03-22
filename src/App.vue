@@ -13,7 +13,8 @@ export default {
 
 <style>
 @import './assets/styles/themes/theme-default.css';
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Eloquia, Helvetica, Arial, sans-serif;
 }
 </style>

@@ -5,26 +5,45 @@
     --darkGrey: #434446;
 }
 
+@font-face {
+    font-family: "Eloquia";
+    src: local("Eloquia"), url(../../../fonts/Eloquia/Eloquia-ExtraLight.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Eloquia";
+    src: local("Eloquia"), url(../../../fonts/Eloquia/Eloquia-ExtraBold.otf) format("opentype");
+    font-weight: bold;
+}
+
 .color-first {
-    color: var(--firstColor);
+    color: var(--firstColor) !important;
 }
 
 .color-second {
-    color: var(--secondColor);
+    color: var(--secondColor) !important;
 }
 
 .bg-first {
-    background-color: var(--firstColor);
+    background-color: var(--firstColor) !important;
 }
 
 .bg-second {
-    background-color: var(--secondColor);
+    background-color: var(--secondColor) !important;
 }
 
 .bg-lightGrey {
-    background-color: var(--lightGrey);
+    background-color: var(--lightGrey) !important;
 }
 
 .bg-darkGrey {
-    background-color: var(--darkGrey);
+    background-color: var(--darkGrey) !important;
+}
+
+.default-nav {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.nav-link {
+    color: var(--secondColor) !important;
 }
