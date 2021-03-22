@@ -41,9 +41,9 @@
 }
 
 .default-nav {
-    background-color: rgba(200, 200, 200, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .nav-link {
-    color: var(--secondColor) !important;
+    color: var(--firstColor) !important;
 }
