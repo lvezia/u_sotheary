@@ -6,15 +6,15 @@ import titleMixin from './mixins/titleMixin'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import i18n from './utils/i18n'
 import Home from './views/Home'
 import Profile from './views/Profile'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(VueRouter)
 
 Vue.mixin(titleMixin)
-
-Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 
@@ -37,5 +37,6 @@ const router = new VueRouter({
 
 new Vue({
     router,
+    i18n,
     render: h => h(App),
 }).$mount('#app')

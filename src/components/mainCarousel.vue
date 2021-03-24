@@ -26,6 +26,7 @@
             :src="getImgSrc(item.mainImage)"
             alt="image slot"
           >
+          <div class="gradient-bg"></div>
         </template>
 
         <router-link to="/" class="banner-btn">More details</router-link>
@@ -80,6 +81,14 @@ export default {
 .img-banner {
   object-fit: cover;
   object-position: center;
+}
+
+.gradient-bg {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent 55%, rgba(14, 40, 55, 0.9));
+    position: absolute;
+    top: 0;
 }
 
 .banner-btn {
