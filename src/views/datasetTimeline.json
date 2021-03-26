@@ -1,0 +1,24 @@
+{
+    "timeline": [{
+            "date": "2014-2019",
+            "title": "Royal University of Fine Arts",
+            "description": "Full Scholarship Interior Designer, Thesis: B+",
+            "city": "Phnom Penh",
+            "country": "Cambodia"
+        },
+        {
+            "date": "2014-2018",
+            "title": "Royal University of Law and Economics",
+            "description": "Full Scholarship Business Management",
+            "city": "Phnom Penh",
+            "country": "Cambodia"
+        },
+        {
+            "date": "Jan 2019 - Present",
+            "title": "Interior Designer",
+            "description": "FulScholarship, Thesis: B+",
+            "city": "Phnom Penh",
+            "country": "Cambodia"
+        }
+    ]
+}

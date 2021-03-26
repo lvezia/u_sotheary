@@ -5,5 +5,15 @@
         "projects": "Projects",
         "languages": "Languages",
         "moreDetails": "More details"
+    },
+    "profile": {
+        "age": "Age: {age}",
+        "introduction": "Interior designer at Real Line Design. Contrbuting in several projects, I sharpened my skills and gained experience by completing all asigned tasks within deadlines and its responsibilities.",
+        "experiences": "Experiences",
+        "skills": "Skills",
+        "softwareSkills": "Software Skills",
+        "khmer": "Khmer",
+        "english": "English",
+        "vietnamese": "Vietnamese"
     }
 }

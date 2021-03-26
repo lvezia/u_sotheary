@@ -7,8 +7,8 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <router-link to="/" class="nav-item nav-link">{{ $t('home.projects') }}</router-link>
-          <router-link to="/" class="nav-item nav-link">{{ $t('home.profile') }}</router-link>
+          <router-link :to="{ name: 'Projects' }" class="nav-item nav-link">{{ $t('home.projects') }}</router-link>
+          <router-link :to="{ name: 'Profile' }" class="nav-item nav-link">{{ $t('home.profile') }}</router-link>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

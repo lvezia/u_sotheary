@@ -1,0 +1,37 @@
+{
+    "profile": {
+        "firstname": "Sotheary",
+        "lastname": "Ung",
+        "birthdate": "1997-03-22T12:00:00.511Z",
+        "profilePicture": "profilePicture.jpg",
+        "city": "Phnom Penh",
+        "country": "Cambodia",
+        "socialMedia": {
+            "linkedin": "https://www.linkedin.com/in/sotheary-ung-2715b31b2/"
+        },
+        "skillsList": [
+            "Able to work in either team or individual; able to lead the team to finish the work on time with a great result; have a high commitment and tolerance in any dificulty and presure; wiling to learn and responsible for asigned task"
+        ],
+        "softwareList": [{
+                "name": "3D Max",
+                "icon": "3dmax.jpg"
+            },
+            {
+                "name": "Photoshop",
+                "icon": "photoshop.jpg"
+            },
+            {
+                "name": "2D AutoCad",
+                "icon": "3dmax.jpg"
+            },
+            {
+                "name": "V-Ray SketchUp",
+                "icon": "3dmax.jpg"
+            },
+            {
+                "name": "Microsoft Office",
+                "icon": "3dmax.jpg"
+            }
+        ]
+    }
+}

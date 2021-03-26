@@ -5,5 +5,10 @@
         "projects": "Projects",
         "languages": "Langues",
         "moreDetails": "Plus de détails"
+    },
+    "profile": {
+        "age": "Age: {age}",
+        "experience": "Expériences",
+        "skills": "Compétences"
     }
 }

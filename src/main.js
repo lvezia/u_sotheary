@@ -9,6 +9,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import i18n from './utils/i18n'
 import Home from './views/Home'
 import Profile from './views/Profile'
+import Projects from './views/Projects'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
@@ -27,6 +28,11 @@ const routes = [{
         path: '/profile',
         name: 'Profile',
         component: Profile
+    },
+    {
+        path: '/projects',
+        name: 'Projects',
+        component: Projects
     }
 ]
 
