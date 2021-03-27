@@ -14,6 +14,10 @@
         "softwareSkills": "Software Skills",
         "khmer": "Khmer",
         "english": "English",
-        "vietnamese": "Vietnamese"
+        "vietnamese": "Vietnamese",
+        "native": "Native",
+        "businessFluent": "Business Fluent",
+        "proficient": "Proficient",
+        "intermediate": "Intermediate"
     }
 }

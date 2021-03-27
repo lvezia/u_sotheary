@@ -2,48 +2,92 @@
   <div id="Profile">
     <LayoutDefault>
       <div class="gap"></div>
-      <div class="p-4">
+      <div class="container pt-4">
         <div class="row">
           <div class="col-md-4">
-            <div class="card-profile">
-              <div class="profilePictureContainer">
-                <img :src="displayPicture(profile.profilePicture)" class="profilePicture" />
+            <!-- PROFILE CARD  -->
+            <transition appear name="fade-in">
+              <div class="card-profile">
+                <div class="profilePictureContainer">
+                  <img :src="displayPicture(profile.profilePicture)" class="profilePicture" />
+                </div>
+                <h3 class="profileName">{{ profile.firstname }} {{ profile.lastname }}</h3>
+                <p class="text-center color-first">{{ $t('profile.age', { age: profileAge } ) }}</p>
+                <p class="text-center color-first">{{ profile.city }}, {{ profile.country }}</p>
+                <a :href="profile.socialMedia.linkedin" class="text-center link-profile color-second"><b-icon icon="linkedin" font-scale="2"></b-icon></a>
               </div>
-              <h3 class="profileName">{{ profile.firstname }} {{ profile.lastname }}</h3>
-              <p class="text-center color-first">{{ $t('profile.age', { age: profileAge } ) }}</p>
-              <p class="text-center color-first">{{ profile.city }}, {{ profile.country }}</p>
-              <a :href="profile.socialMedia.linkedin" class="text-center link-profile"><b-icon icon="linkedin" font-scale="2"></b-icon></a>
-            </div>
+            </transition>
 
-            <div class="card-profile">
-              <h3 class="color-first"><b>{{ $t('home.languages') }}</b></h3>
-              <ul>
-                <li>{{ $t('profile.khmer') }}</li>
-                <li>{{ $t('profile.english') }}</li>
-                <li>{{ $t('profile.vietnamese') }}</li>
-              </ul>
-            </div>
+            <!-- LANGUAGES  -->
+            <transition appear name="fade-in">
+              <div class="card-profile">
+                <h3 class="color-first"><b>{{ $t('home.languages') }}</b></h3>
+                <ul class="pl-0">
+                  <li class="lang-progress">
+                    {{ $t('profile.khmer') }}
+                    <b-progress :max="5" variant="second" class="mb-3">
+                      <b-progress-bar :value="5">
+                        <span>{{ $t('profile.native') }}</span>
+                      </b-progress-bar>
+                    </b-progress>
+                  </li>
+                  <li class="lang-progress">
+                    {{ $t('profile.english') }}
+                    <b-progress :max="5" variant="second" class="mb-3">
+                      <b-progress-bar :value="4">
+                        <span>{{ $t('profile.businessFluent') }}</span>
+                      </b-progress-bar>
+                    </b-progress>
+                  </li>
+                  <li class="lang-progress">
+                    {{ $t('profile.vietnamese') }}
+                    <b-progress :max="5" variant="second" class="mb-3">
+                      <b-progress-bar :value="4">
+                        <span>{{ $t('profile.businessFluent') }}</span>
+                      </b-progress-bar>
+                    </b-progress>
+                  </li>
+                </ul>
+              </div>
+            </transition>
 
-            <div class="card-profile">
-              <p>{{ $t('profile.introduction') }}</p>
-            </div>
+            <!-- INTRODUCTION  -->
+            <transition appear name="fade-in">
+              <div class="card-profile">
+                <p>{{ $t('profile.introduction') }}</p>
+              </div>
+            </transition>
 
-            <div class="card-profile">
-              <h3>{{ $t('profile.softwareSkills') }}</h3>
-            </div>
+            <!-- SOFTWARES  -->
+            <transition appear name="fade-in">
+              <div class="card-profile">
+                <h3>{{ $t('profile.softwareSkills') }}</h3>
+                <ul class="">
+                  <li v-for="(sftw, i) in profile.softwareList" :key="i" class="">{{ sftw.name }}</li>
+                </ul>
+              </div>
+            </transition>
           </div>
-          <div class="col-md-8">
-            <div class="card-profile">
-              <h3 class="color-first"><b>{{ $t('profile.skills') }}</b></h3>
-              <ul>
-                <li v-for="(skill, i) in profile.skillsList" :key="i">{{ skill }}</li>
-              </ul>
-            </div>
 
-            <div class="card-profile">
-              <h3 class="color-first"><b>{{ $t('profile.experiences') }}</b></h3>
-              <Timeline></Timeline>
-            </div>
+          <div class="col-md-8">
+            <!-- SOFT SKILLS  -->
+            <transition appear name="fade-in-right">
+              <div class="card-profile">
+                <h3 class="color-first"><b>{{ $t('profile.skills') }}</b></h3>
+                <ul>
+                  <li v-for="(skill, i) in profile.skillsList" :key="i">{{ skill }}</li>
+                </ul>
+              </div>
+            </transition>
+
+            <!-- TIMELINE  -->
+            <transition appear name="fade-in-right">
+              <div class="card-profile">
+                <h3 class="color-first"><b>{{ $t('profile.experiences') }}</b></h3>
+                <Timeline></Timeline>
+              </div>
+            </transition>
+            
           </div>
         </div>
 
@@ -116,5 +160,9 @@ export default {
   margin-right: auto;
   display: block;
   margin-bottom: 20px;
+}
+
+.lang-progress {
+  list-style: none;
 }
 </style>

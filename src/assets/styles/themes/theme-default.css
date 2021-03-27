@@ -51,3 +51,54 @@
 .gap {
     margin-top: 56px;
 }
+
+
+/* ANIMATION */
+
+.fade-in-enter-active {
+    position: relative;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+.fade-in-leave-active {
+    animation: fadeIn ease 1s reverse;
+}
+
+.fade-in-right-enter-active {
+    position: relative;
+    animation: fadeInRight ease 1s;
+    -webkit-animation: fadeInRight ease 1s;
+    -moz-animation: fadeInRight ease 1s;
+    -o-animation: fadeInRight ease 1s;
+    -ms-animation: fadeInRight ease 1s;
+}
+
+.fade-in-right-leave-active {
+    animation: fadeInRight ease 1s reverse;
+}
+
+@keyframes fadeIn {
+    from {
+        left: -20px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        left: 20px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1
+    }
+}

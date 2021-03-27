@@ -4,8 +4,8 @@
       <ul>
         <li v-for="(eventItem, index) in eventTimeline" :key="index">
           <div>
-            <time>{{ eventItem.date }}</time>
-            <h4>{{ eventItem.title }}</h4>
+            <time class="time-timeline">{{ eventItem.date }}</time>
+            <h4 class="pt-2">{{ eventItem.title }}</h4>
             <p>{{ eventItem.description }}</p>
             <span class="locationTimeline">{{ eventItem.city }}, {{ eventItem.country }}</span>
           </div>
@@ -34,7 +34,7 @@ export default {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  padding: 50px 0 0 100px;
+  padding: 50px 0;
 }
 
 .timeline ul li {
@@ -61,7 +61,7 @@ export default {
 .timeline ul li div {
   position: relative;
   bottom: 0;
-  width: 450px;
+  width: 350px;
   padding: 15px;
   color: #fff;
   background: var(--firstColor);
@@ -89,16 +89,12 @@ export default {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 1200px) {
-  .timeline ul {
-    padding: 50px 0;
-  }
-
   .timeline ul li div {
-    width: 400px;
+    width: 350px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 996px) {
   .timeline ul li div {
     width: 250px;
   }
@@ -116,5 +112,13 @@ export default {
 
 .locationTimeline {
   color: var(--secondColor)
+}
+
+.time-timeline {
+  position: relative;
+  left: -35px;
+  background-color: var(--secondColor);
+  border-radius: 5px;
+  padding: 5px;
 }
 </style>

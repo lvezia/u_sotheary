@@ -9,6 +9,14 @@
     "profile": {
         "age": "Age: {age}",
         "experience": "Expériences",
-        "skills": "Compétences"
+        "skills": "Compétences",
+        "softwareSkills": "Logicielles",
+        "khmer": "Khmer",
+        "english": "Anglais",
+        "vietnamese": "Vietnamien",
+        "native": "Natif",
+        "businessFluent": "Professionnel",
+        "proficient": "Avancé",
+        "intermediate": "Intermédiaire"
     }
 }
