@@ -42,7 +42,7 @@
                   <li class="lang-progress">
                     {{ $t('profile.vietnamese') }}
                     <b-progress :max="5" variant="second" class="mb-3">
-                      <b-progress-bar :value="4">
+                      <b-progress-bar :value="3">
                         <span>{{ $t('profile.businessFluent') }}</span>
                       </b-progress-bar>
                     </b-progress>
@@ -133,6 +133,7 @@ export default {
   padding: 20px 15px 10px 15px;
   border-radius: 5px;
   box-shadow: 0 0 10px #CCCCCC;
+  background-color: #fff;
 }
 
 .profilePictureContainer {
@@ -164,5 +165,9 @@ export default {
 
 .lang-progress {
   list-style: none;
+}
+
+..progress {
+  background-color: var(--lightGrey);
 }
 </style>

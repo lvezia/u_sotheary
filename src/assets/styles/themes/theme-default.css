@@ -16,6 +16,10 @@
     font-weight: bold;
 }
 
+body {
+    background-color: var(--lightGrey) !important;
+}
+
 .color-first {
     color: var(--firstColor) !important;
 }

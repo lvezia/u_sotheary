@@ -1,9 +1,9 @@
 <template>
   <div class="LayoutDefault">
-    <b-navbar toggleable="lg" class="default-nav" fixed="top">
+    <b-navbar toggleable="lg" class="default-nav" fixed="top" type="dark">
       <router-link to="/" class="nav-item nav-link"><b>{{ $t('home.home') }}</b></router-link>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse dark"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
@@ -13,7 +13,7 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-icon icon="chat-right-text" class="lang-icon"></b-icon>
+          <b-icon icon="chat-right-text" class="d-none d-lg-block lang-icon"></b-icon>
           <b-nav-item-dropdown class="color-second" :text="$t('home.languages')" right>
             <b-dropdown-item v-for="lang in languages" :key="lang" @click="setLang(lang)" class="item-lang">{{ lang }}</b-dropdown-item>
           </b-nav-item-dropdown>
