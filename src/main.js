@@ -10,6 +10,7 @@ import i18n from './utils/i18n'
 import Home from './views/Home'
 import Profile from './views/Profile'
 import Projects from './views/Projects'
+import ProjectDetails from './views/ProjectDetails'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
@@ -33,6 +34,11 @@ const routes = [{
         path: '/projects',
         name: 'Projects',
         component: Projects
+    },
+    {
+        path: '/projects/:id',
+        name: 'ProjectDetails',
+        component: ProjectDetails
     }
 ]
 

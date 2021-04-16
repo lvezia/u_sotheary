@@ -167,7 +167,7 @@ export default {
   list-style: none;
 }
 
-..progress {
+.progress {
   background-color: var(--lightGrey);
 }
 </style>

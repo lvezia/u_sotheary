@@ -15,8 +15,8 @@
       <!-- Slides with img slot -->
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
       <b-carousel-slide
-        v-for="item in projects"
-        v-bind:key='item.id'
+        v-for="(item, index) in projects"
+        v-bind:key='index'
         :caption="item.name"
         :text="item.description"
       >
@@ -29,7 +29,7 @@
           <div class="gradient-bg"></div>
         </template>
 
-        <router-link to="/" class="banner-btn">More details</router-link>
+        <router-link :to="{ name: 'ProjectDetails', params: { id: item.id} }" class="banner-btn">More details</router-link>
         <div class="mt-4"></div>
       </b-carousel-slide>
     </b-carousel>
