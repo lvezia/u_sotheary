@@ -1,28 +1,36 @@
 {
     "projects": [{
-            "id": 1,
+            "id": "1",
             "name": "Project 1",
+            "location": "Phnom Penh",
+            "area": "110m2",
             "mainImage": "project1.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
             "date": "2021-03-20T18:25:00.511Z"
         },
         {
-            "id": 2,
+            "id": "2",
             "name": "Project 2",
+            "location": "Phnom Penh",
+            "area": "120m2",
             "mainImage": "project2.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
             "date": "2021-03-21T18:25:00.511Z"
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "Project 3",
+            "location": "Phnom Penh",
+            "area": "130m2",
             "mainImage": "project3.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
             "date": "2021-03-22T18:25:00.511Z"
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "Project 4",
+            "location": "Phnom Penh",
+            "area": "140m2",
             "mainImage": "project4.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
             "date": "2021-03-23T18:25:00.511Z"

@@ -2,17 +2,17 @@
   <div id="Projects">
     <LayoutDefault>
       <div class="gap">
-        <div class="container">
+        <div class="container pt-4">
           <div class="row">
-            <div class="col-md-6 p-2"
-            v-for="(project, index) in projects" 
-            :key="index" 
-            @mouseenter="isMouseOnProject = index" 
-            @mouseleave="isMouseOnProject = null"
-            v-on:click="linkToProjectDetails(project.id)"
+            <div class="col-md-4 pb-4 col-animation"
+              v-for="(project, index) in projects"
+              :key="index" 
+              @mouseenter="isMouseOnProject = index" 
+              @mouseleave="isMouseOnProject = null"
+              v-on:click="linkToProjectDetails(project.id)"
             >
               <img
-                class="d-block img-fluid w-100 h-auto"
+                class="d-block img-fluid w-100 h-auto card-img"
                 :src="getImgSrc(project.mainImage)"
                 alt="image slot"
               >
@@ -59,6 +59,10 @@ export default {
 </script>
 
 <style scoped>
+.card-img {
+  border-radius: 5px;
+}
+
 .title-project {
   color: #fff;
   margin-top: auto;
@@ -73,10 +77,11 @@ export default {
 
 .hover-project {
   position: absolute;
-  top: 0.5rem;
-  width: calc(100% - 1rem);
-  height: calc(100% - 1rem);
+  top: 0rem;
+  width: calc(100% - 30px);
+  height: calc(100% - 1.5rem);
   background: rgba(14, 40, 55, 0.5);
+  border-radius: 5px;
   display: flex;
   align-content: center;
   justify-content: center;

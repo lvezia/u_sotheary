@@ -85,6 +85,24 @@ body {
     animation: fadeInRight ease 1s reverse;
 }
 
+.col-animation:nth-of-type(odd) {
+    position: relative;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+.col-animation:nth-of-type(even) {
+    position: relative;
+    animation: fadeInRight ease 1s;
+    -webkit-animation: fadeInRight ease 1s;
+    -moz-animation: fadeInRight ease 1s;
+    -o-animation: fadeInRight ease 1s;
+    -ms-animation: fadeInRight ease 1s;
+}
+
 @keyframes fadeIn {
     from {
         left: -20px;

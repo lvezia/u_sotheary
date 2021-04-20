@@ -18,5 +18,11 @@
         "businessFluent": "Professionnel",
         "proficient": "Avancé",
         "intermediate": "Intermédiaire"
+    },
+    "project": {
+        "location": "Lieu",
+        "area": "Superficie",
+        "description": "Description",
+        "date": "Date"
     }
 }

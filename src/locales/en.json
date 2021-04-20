@@ -19,5 +19,11 @@
         "businessFluent": "Business Fluent",
         "proficient": "Proficient",
         "intermediate": "Intermediate"
+    },
+    "project": {
+        "location": "Location",
+        "area": "Area",
+        "description": "Description",
+        "date": "Date"
     }
 }

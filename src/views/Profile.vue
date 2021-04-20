@@ -7,7 +7,7 @@
           <div class="col-md-4">
             <!-- PROFILE CARD  -->
             <transition appear name="fade-in">
-              <div class="card-profile">
+              <div class="card-profile p-2">
                 <div class="profilePictureContainer">
                   <img :src="displayPicture(profile.profilePicture)" class="profilePicture" />
                 </div>
