@@ -5,9 +5,13 @@ import VueRouter from 'vue-router'
 import titleMixin from './mixins/titleMixin'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueParticles from 'particles.vue'
 
 import i18n from './utils/i18n'
 import Home from './views/Home'
+import Login from './views/Login'
+import AdminProfile from './views/admin/Profile'
+import AdminProject from './views/admin/Projects'
 import Profile from './views/Profile'
 import Projects from './views/Projects'
 import ProjectDetails from './views/ProjectDetails'
@@ -15,6 +19,7 @@ import ProjectDetails from './views/ProjectDetails'
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueRouter)
+Vue.use(VueParticles)
 
 Vue.mixin(titleMixin)
 
@@ -39,6 +44,21 @@ const routes = [{
         path: '/projects/:id',
         name: 'ProjectDetails',
         component: ProjectDetails
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login
+    },
+    {
+        path: '/admin/profile',
+        name: 'AdminProfile',
+        component: AdminProfile
+    },
+    {
+        path: '/admin/projects',
+        name: 'AdminProjects',
+        component: AdminProject
     }
 ]
 

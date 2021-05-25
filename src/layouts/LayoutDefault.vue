@@ -1,7 +1,15 @@
 <template>
   <div class="LayoutDefault">
     <b-navbar toggleable="lg" class="default-nav" fixed="top" type="dark">
-      <router-link to="/" class="nav-item nav-link"><b>{{ $t('home.home') }}</b></router-link>
+      <router-link to="/" class="nav-item nav-link">
+        <img
+          class="d-block img-fluid h-auto img-project"
+          :src="getImgSrc('SothearyLogo.png')"
+          alt="image slot"
+          width="32px"
+          height="auto"
+        >
+      </router-link>
 
       <b-navbar-toggle target="nav-collapse dark"></b-navbar-toggle>
 
@@ -38,6 +46,9 @@ export default {
   },
   computed: {},
   methods: {
+    getImgSrc(img) {
+        return require(`../assets/images/${img}`)
+    },
     setLang(lang) {
       this.$i18n.locale = lang
     }
