@@ -72,4 +72,8 @@ export default {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.nav-link:hover {
+  text-decoration: underline;
+}
 </style>

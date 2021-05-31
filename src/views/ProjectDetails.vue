@@ -112,13 +112,13 @@ export default {
   }
 
   .col-left-details {
-  margin-top: 0;
-  position: relative;
-}
+    margin-top: 0;
+    position: relative;
+  }
 
-.col-right-details {
-  margin-top: 0;
-  position: relative;
-}
+  .col-right-details {
+    margin-top: 0;
+    position: relative;
+  }
 }
 </style>

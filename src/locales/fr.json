@@ -3,6 +3,8 @@
         "home": "Accueil",
         "profile": "Profil",
         "projects": "Projets",
+        "dashboard": "Tableau De Bord",
+        "details": "Détails",
         "languages": "Langues",
         "moreDetails": "Plus de détails"
     },
@@ -24,5 +26,14 @@
         "area": "Superficie",
         "description": "Description",
         "date": "Date"
+    },
+    "login": {
+        "login": "Connexion",
+        "email": "Email",
+        "password": "Mot de passe",
+        "submit": "Envoyer"
+    },
+    "admin": {
+        "admin": "Gestion"
     }
 }

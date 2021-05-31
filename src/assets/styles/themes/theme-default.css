@@ -124,3 +124,41 @@ body {
         opacity: 1
     }
 }
+
+
+/* FORM INPUT */
+
+.user-field {
+    position: relative;
+}
+
+.user-field input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--lightGrey);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--lightGrey);
+    outline: none;
+    background: transparent;
+}
+
+.user-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--lightGrey);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-field input:focus~label,
+.user-field input:valid~label {
+    top: -20px;
+    left: 0;
+    color: var(--secondColor);
+    font-size: 12px;
+}

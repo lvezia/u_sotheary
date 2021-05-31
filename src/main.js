@@ -10,6 +10,7 @@ import VueParticles from 'particles.vue'
 import i18n from './utils/i18n'
 import Home from './views/Home'
 import Login from './views/Login'
+import Dashboard from './views/admin/Dashboard'
 import AdminProfile from './views/admin/Profile'
 import AdminProject from './views/admin/Projects'
 import Profile from './views/Profile'
@@ -49,6 +50,11 @@ const routes = [{
         path: '/login',
         name: 'Login',
         component: Login
+    },
+    {
+        path: '/admin/dashboard',
+        name: 'Dashboard',
+        component: Dashboard
     },
     {
         path: '/admin/profile',

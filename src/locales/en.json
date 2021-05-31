@@ -3,6 +3,8 @@
         "home": "Home",
         "profile": "Profile",
         "projects": "Projects",
+        "dashboard": "Dashboard",
+        "details": "Details",
         "languages": "Languages",
         "moreDetails": "More details"
     },
@@ -25,5 +27,14 @@
         "area": "Area",
         "description": "Description",
         "date": "Date"
+    },
+    "login": {
+        "login": "Login",
+        "email": "Email",
+        "password": "Password",
+        "submit": "Submit"
+    },
+    "admin": {
+        "admin": "Admin"
     }
 }

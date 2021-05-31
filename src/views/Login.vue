@@ -151,18 +151,18 @@
       }"
     />
     <div class="card-container">
-      <h3>Login</h3>
+      <h3>{{ $t('login.login') }}</h3>
       <form>
         <div class="user-field">
           <input type="text" name="" required="true">
-          <label>Email</label>
+          <label>{{ $t('login.email') }}</label>
         </div>
         <div class="user-field">
           <input type="password" name="" required="true">
-          <label>Password</label>
+          <label>{{ $t('login.password') }}</label>
         </div>
         <button href="#">
-          Submit
+          {{ $t('login.submit') }}
         </button>
       </form>
     </div>
@@ -207,41 +207,6 @@ export default {
   margin-bottom: 20px;
 }
 
-.card-container .user-field {
-  position: relative;
-}
-
-.card-container .user-field input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: var(--lightGrey);
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid var(--lightGrey);
-  outline: none;
-  background: transparent;
-}
-
-.card-container .user-field label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: var(--lightGrey);
-  pointer-events: none;
-  transition: .5s;
-}
-
-.card-container .user-field input:focus ~ label,
-.card-container .user-field input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: var(--secondColor);
-  font-size: 12px;
-}
-
 .card-container button {
   color: var(--lightGrey);
   background: transparent;
@@ -255,5 +220,11 @@ export default {
 
 .card-container button:hover {
   box-shadow: 0 0 15px #fff
+}
+
+@media only screen and (max-width: 767px) {
+  .card-container {
+    width: 350px;
+  }
 }
 </style>

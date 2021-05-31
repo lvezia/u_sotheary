@@ -1,23 +1,16 @@
 <template>
-  <div id="AdminProfile">
+  <div id="Dashboard">
     <LayoutDefault>
   
       <div class="admin-container">
         <Sidebar></Sidebar>
       
         <div class="content-container">
-          <div class="custom-card">
-            <h2>{{ $t('home.profile') }}</h2>
-            <form>
-              <div class="user-field">
-                <input type="text" name="" required="true">
-                <label>{{ $t('login.email') }}</label>
-              </div>
-              <div class="user-field">
-                <input type="password" name="" required="true">
-                <label>{{ $t('login.password') }}</label>
-              </div>
-            </form>
+          <div class="custom-card" v-on:click="redirectTo('AdminProfile')">
+            <h2>Profile</h2>
+          </div>
+          <div class="custom-card" v-on:click="redirectTo('AdminProjects')">
+            <h2>Projects</h2>
           </div>
         </div>
       </div>
@@ -31,15 +24,20 @@ import LayoutDefault from '../../layouts/LayoutDefault'
 import Sidebar from '../../layouts/Sidebar'
 
 export default {
-  name: 'AdminProfile',
-  title: 'Profile',
+  name: 'Dashboard',
+  title: 'Dashboard',
   components: { LayoutDefault, Sidebar },
-  methods: {}
+  methods: {
+    redirectTo(pathName) {
+      this.$router.push({ name: pathName })
+      
+    }
+  }
 }
 </script>
 
 <style scoped>
-#AdminProfile {
+#Dashboard {
   height: 100vh;
   background-color: var(--firstColor);
 }
@@ -57,20 +55,18 @@ export default {
 }
 
 .custom-card {
-  display: flex;
-  flex-direction: column;
   background-color: var(--lightGrey);
-  width: 100%;
-  height: fit-content;
-  padding: 20px 20px;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  padding: 0px 20px;
   margin: 20px 20px;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   background-color: rgba(0,0,0,.5);
   box-shadow: 0 0 10px var(--lightGrey);
   color: var(--lightGrey);
-}
-
-.custom-card h2 {
-  padding: 0 0 20px 0;
+  cursor: pointer;
 }
 </style>
