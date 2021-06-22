@@ -152,17 +152,19 @@
     />
     <div class="card-container">
       <h3>{{ $t('login.login') }}</h3>
-      <form>
+      <p class="errorForm" v-if="emailError">{{ emailError}}</p>
+      <p class="errorForm" v-if="pwdError">{{ pwdError}}</p>
+      <form onsubmit="return false">
         <div class="user-field">
-          <input type="text" name="" required="true">
+          <input type="email" name="email" required="true" v-model="email">
           <label>{{ $t('login.email') }}</label>
         </div>
         <div class="user-field">
-          <input type="password" name="" required="true">
+          <input type="password" name="password" required="true" v-model="password">
           <label>{{ $t('login.password') }}</label>
         </div>
-        <button href="#">
-          {{ $t('login.submit') }}
+        <button v-on:click="login">
+            {{ $t('login.submit') }}
         </button>
       </form>
     </div>
@@ -174,8 +176,60 @@
 export default {
   name: 'Login',
   title: 'Login',
+  data() {
+    return {
+      email: 'azert@ui.op',
+      password: '123',
+      emailError: '',
+      pwdError: ''
+    }
+  },
   mounted() {},
-  methods: {}
+  methods: {
+    clearErrors() {
+      this.emailError = ''
+      this.pwdError = ''
+    },
+    checkEmail() {
+      if (!this.email) {
+        this.emailError = 'This field cannot be empty'
+        return false
+      } else if (this.email) {
+        const EmailRegex = /^\S+@\S+\.\S+$/
+        if (!this.email.match(EmailRegex)) {
+          this.emailError = 'Email invalid'
+          return false
+        }
+      }
+      return true
+    },
+    checkPassword() {
+      if (!this.password) {
+        this.pwdError = 'This field cannot be empty'
+        return false
+      } else {
+        return true
+      }
+    },
+    login: function(e) {
+      this.clearErrors()
+      if (this.checkPassword() && this.checkEmail()) {
+        const loginURL = 'http://localhost:3000/login'
+        let data = {
+          email: this.email,
+          password: this.password
+        }
+        this.axios.post(loginURL, data)
+        .then(response => {
+          console.log('Connection success: ', response)
+        })
+        .catch(error => {
+          console.log(error)
+        })
+      }
+      e.preventDefault()
+    }
+  }
 }
 </script>
 
@@ -220,6 +274,10 @@ export default {
 
 .card-container button:hover {
   box-shadow: 0 0 15px #fff
+}
+
+.errorForm {
+  color: red;
 }
 
 @media only screen and (max-width: 767px) {

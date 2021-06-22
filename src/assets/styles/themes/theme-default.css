@@ -162,3 +162,7 @@ body {
     color: var(--secondColor);
     font-size: 12px;
 }
+
+.fieldError {
+    color: red;
+}

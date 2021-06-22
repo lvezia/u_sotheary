@@ -6,6 +6,8 @@ import titleMixin from './mixins/titleMixin'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueParticles from 'particles.vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 import i18n from './utils/i18n'
 import Home from './views/Home'
@@ -21,6 +23,7 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueRouter)
 Vue.use(VueParticles)
+Vue.use(VueAxios, axios)
 
 Vue.mixin(titleMixin)
 
