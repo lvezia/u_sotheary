@@ -1,6 +1,8 @@
 :root {
-    --firstColor: #0E2837;
-    --secondColor: #1CC3B1;
+    --firstColor: #fbf8f3;
+    --secondColor: #2d0b00;
+    --thirdColor: #fcd581;
+    --fourthColor: #ff7e65;
     --lightGrey: #ede8e8;
     --darkGrey: #434446;
 }
@@ -17,7 +19,7 @@
 }
 
 body {
-    background-color: var(--lightGrey) !important;
+    background-color: var(--firstColor) !important;
 }
 
 .color-first {
@@ -45,11 +47,11 @@ body {
 }
 
 .default-nav {
-    background-color: rgba(14, 40, 55, 1);
+    background-color: var(--firstColor);
 }
 
 .nav-link {
-    color: #fff !important;
+    color: var(--firstColor);
 }
 
 .gap {

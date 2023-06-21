@@ -34,6 +34,7 @@ import projectsData from './datasetProject.json'
 export default {
   components: { LayoutDefault },
   name: 'Projects',
+  title: 'Projects - Ung Sotheary',
   data() {
     return {
       isMouseOnProject: null

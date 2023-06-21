@@ -1,6 +1,6 @@
 <template>
   <div class="LayoutDefault">
-    <b-navbar toggleable="lg" class="default-nav" fixed="top" type="dark">
+    <b-navbar toggleable="lg" class="default-nav" fixed="top">
       <router-link to="/" class="nav-item nav-link">
         <img
           class="d-block img-fluid h-auto img-project"
@@ -15,14 +15,15 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <router-link :to="{ name: 'Projects' }" class="nav-item nav-link">{{ $t('home.projects') }}</router-link>
-          <router-link :to="{ name: 'Profile' }" class="nav-item nav-link">{{ $t('home.profile') }}</router-link>
+            <router-link :to="{ name: 'Home' }" class="nav-item nav-link">{{ $t('home.home') }}</router-link>
+            <router-link :to="{ name: 'Projects' }" class="nav-item nav-link">{{ $t('home.projects') }}</router-link>
+            <router-link :to="{ name: 'Profile' }" class="nav-item nav-link">{{ $t('home.profile') }}</router-link>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-icon icon="chat-right-text" class="d-none d-lg-block lang-icon"></b-icon>
-          <b-nav-item-dropdown class="color-second" :text="$t('home.languages')" right>
+          <b-nav-item-dropdown class="color-second nav-link" :text="$t('home.languages')" right>
             <b-dropdown-item v-for="lang in languages" :key="lang" @click="setLang(lang)" class="item-lang">{{ lang }}</b-dropdown-item>
           </b-nav-item-dropdown>
 
@@ -58,22 +59,27 @@ export default {
 
 <style scoped>
 .nav-item {
-  margin-left: 5px;
-  margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--secondColor);
 }
 
 .item-lang {
-  color: var(--firstColor);
+  color: var(--secondColor);
   text-transform: uppercase;
 }
 
 .lang-icon {
-  color: #fff;
-  margin-top: auto;
-  margin-bottom: auto;
+    color: var(--secondColor);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.nav-link:hover {
+.nav-links {
+    color: var(--secondColor);
+}
+
+.nav-links:hover {
   text-decoration: underline;
 }
 </style>

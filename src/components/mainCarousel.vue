@@ -86,7 +86,7 @@ export default {
 .gradient-bg {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, transparent 55%, rgba(14, 40, 55, 0.9));
+    background-image: linear-gradient(180deg, transparent 55%, rgba(255, 255, 255, 0.9));
     position: absolute;
     top: 0;
 }
