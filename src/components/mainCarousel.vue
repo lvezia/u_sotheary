@@ -8,7 +8,8 @@
       :interval="7000"
       controls
       indicators
-      background="#ababab"
+      background="#fff"
+      style="color: var(--secondColor)"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
@@ -17,8 +18,7 @@
       <b-carousel-slide
         v-for="(item, index) in projects"
         v-bind:key='index'
-        :caption="item.name"
-        :text="item.description"
+        content-visible-up="sm"
       >
         <template #img>
           <img
@@ -27,10 +27,13 @@
             alt="image slot"
           >
           <div class="gradient-bg"></div>
+          <div class="carousel-caption d-none d-sm-block">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+            <router-link :to="{ name: 'ProjectDetails', params: { id: item.id} }" class="banner-btn">More details</router-link>
+            <div class="mt-4"></div>
+          </div>
         </template>
-
-        <router-link :to="{ name: 'ProjectDetails', params: { id: item.id} }" class="banner-btn">More details</router-link>
-        <div class="mt-4"></div>
       </b-carousel-slide>
     </b-carousel>
   </div>
@@ -70,7 +73,6 @@ export default {
 <style scoped>
 .mainCarousel {
   width: 100%;
-  text-shadow: 1px 1px 2px #333;
 }
 
 .carousel-item img {
@@ -86,9 +88,13 @@ export default {
 .gradient-bg {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, transparent 55%, rgba(255, 255, 255, 0.9));
+    background-image: linear-gradient(180deg, transparent 30%, rgba(255, 255, 255, 0.9));
     position: absolute;
     top: 0;
+}
+
+.carousel-caption {
+  color: var(--secondColor);
 }
 
 .banner-btn {

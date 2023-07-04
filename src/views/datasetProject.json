@@ -1,38 +1,92 @@
 {
     "projects": [{
             "id": "1",
-            "name": "Project 1",
+            "name": "Daily painting",
             "location": "Phnom Penh",
             "area": "110m2",
             "mainImage": "project1.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
+            "description": "Paint showroom design to help customers choose the right paint for their needs. The showroom provides the paint sample and wall display that can show the customers both visually appealing and informative.",
             "date": "2021-03-20T18:25:00.511Z"
         },
         {
             "id": "2",
-            "name": "Project 2",
+            "name": "K2 Car Accessories",
             "location": "Phnom Penh",
             "area": "120m2",
             "mainImage": "project2.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
+            "description": "K2 Car Accessories shop has multi-service including repair service and consultant service.",
             "date": "2021-03-21T18:25:00.511Z"
         },
         {
             "id": "3",
-            "name": "Project 3",
+            "name": "KTV Room",
             "location": "Phnom Penh",
             "area": "130m2",
             "mainImage": "project3.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
+            "description": "KTV Room design with the classic concept using green, grey, and gold as the main colors. The room is an open space that has a singing area and a small mini-bar at the corner of the entrance. The ceiling design with the sky feature makes the room more open.",
             "date": "2021-03-22T18:25:00.511Z"
         },
         {
             "id": "4",
-            "name": "Project 4 Test long name",
+            "name": "Residence House",
             "location": "Phnom Penh",
             "area": "140m2",
             "mainImage": "project4.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices, quam vitae vehicula pulvinar, tellus purus tempor tortor, nec hendrerit dui urna at odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tortor metus, bibendum id vestibulum ac, semper sed augue. Nam et accumsan massa. In eu urna a sem tincidunt venenatis. Nunc cursus sit amet sapien non porttitor. Fusce et diam pellentesque, consequat ex id, pellentesque est. Sed vitae ex magna. Phasellus ornare varius justo at semper. Aliquam sagittis in purus ac fermentum.",
+            "description": "The bedroom is designed with a contemporary concept by keeping the existing floor and using wood furniture.",
+            "date": "2021-03-23T18:25:00.511Z"
+        },
+        {
+            "id": "5",
+            "name": "Gold Shop",
+            "location": "Phnom Penh",
+            "area": "140m2",
+            "mainImage": "project4.jpg",
+            "description": "Gold Shop design with the modern classic concept using white, pink, and rose gold as the main colors.",
+            "date": "2021-03-23T18:25:00.511Z"
+        },
+        {
+            "id": "6",
+            "name": "Woodland Villa",
+            "location": "Phnom Penh",
+            "area": "140m2",
+            "mainImage": "project4.jpg",
+            "description": "Woodland villa design with the modern classic concept using white, brown, and gold as the main colors. The area is an open space on the ground floor.",
+            "date": "2021-03-23T18:25:00.511Z"
+        },
+        {
+            "id": "7",
+            "name": "Bistro Restaurant - Casino",
+            "location": "Phnom Penh",
+            "area": "140m2",
+            "mainImage": "project4.jpg",
+            "description": "Bistro Restaurant is designed with the modern classic concept using dark green, white, and gold as the main colors. The area is an open space on the ground floor.",
+            "date": "2021-03-23T18:25:00.511Z"
+        },
+        {
+            "id": "8",
+            "name": "Hotel Lobby - Casino",
+            "location": "Phnom Penh",
+            "area": "140m2",
+            "mainImage": "project4.jpg",
+            "description": "Hotel Lobby design with a modern concept using white, brown, and gold as the main colors. The area is located at the entrance of the building.",
+            "date": "2021-03-23T18:25:00.511Z"
+        },
+        {
+            "id": "9",
+            "name": "Shop house",
+            "location": "Phnom Penh",
+            "area": "140m2",
+            "mainImage": "project4.jpg",
+            "description": "Shop house design with a modern classic concept using white, brown, and gold as the main colors.",
+            "date": "2021-03-23T18:25:00.511Z"
+        },
+        {
+            "id": "10",
+            "name": "Coco Smart Dress - Shop",
+            "location": "Phnom Penh",
+            "area": "140m2",
+            "mainImage": "project4.jpg",
+            "description": "Interior design for a clothes shop",
             "date": "2021-03-23T18:25:00.511Z"
         }
     ]

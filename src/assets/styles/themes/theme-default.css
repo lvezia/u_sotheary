@@ -168,3 +168,8 @@ body {
 .fieldError {
     color: red;
 }
+
+
+.carousel-caption {
+    color: var(--secondColor);
+}
