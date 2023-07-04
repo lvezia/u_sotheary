@@ -55,7 +55,7 @@ export default {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--firstColor);
+  background: var(--fourthColor);
 }
 
 .timeline ul li div {
@@ -63,10 +63,10 @@ export default {
   bottom: 0;
   width: 350px;
   padding: 15px;
-  color: #fff;
+  color: var(--secondColor);
   background: var(--firstColor);
   border-radius: 5px;
-  box-shadow: 0 0 7px #1cc3b1;
+  box-shadow: 0 0 7px #2d0b00;
   left: 45px;
 }
 
@@ -80,9 +80,9 @@ export default {
 }
 
 .timeline ul li div::before {
-  left: -15px;
+  left: -16px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent var(--firstColor) transparent transparent;
+  border-color: transparent var(--secondColor) transparent transparent;
 }
 
 /* GENERAL MEDIA QUERIES
@@ -117,6 +117,7 @@ export default {
 .time-timeline {
   position: relative;
   left: -35px;
+  color: var(--firstColor);
   background-color: var(--secondColor);
   border-radius: 5px;
   padding: 5px;

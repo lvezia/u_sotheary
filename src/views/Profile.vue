@@ -12,8 +12,8 @@
                   <img :src="displayPicture(profile.profilePicture)" class="profilePicture" />
                 </div>
                 <h3 class="profileName">{{ profile.firstname }} {{ profile.lastname }}</h3>
-                <p class="text-center color-first">{{ $t('profile.age', { age: profileAge } ) }}</p>
-                <p class="text-center color-first">{{ profile.city }}, {{ profile.country }}</p>
+                <p class="text-center color-second">{{ $t('profile.age', { age: profileAge } ) }}</p>
+                <p class="text-center color-second">{{ profile.city }}, {{ profile.country }}</p>
                 <a :href="profile.socialMedia.linkedin" class="text-center link-profile color-second"><b-icon icon="linkedin" font-scale="2"></b-icon></a>
               </div>
             </transition>
@@ -21,7 +21,7 @@
             <!-- LANGUAGES  -->
             <transition appear name="fade-in">
               <div class="card-profile">
-                <h3 class="color-first"><b>{{ $t('home.languages') }}</b></h3>
+                <h3 class="color-second"><b>{{ $t('home.languages') }}</b></h3>
                 <ul class="pl-0">
                   <li class="lang-progress">
                     {{ $t('profile.khmer') }}
@@ -73,7 +73,7 @@
             <!-- SOFT SKILLS  -->
             <transition appear name="fade-in-right">
               <div class="card-profile">
-                <h3 class="color-first"><b>{{ $t('profile.skills') }}</b></h3>
+                <h3 class="color-second"><b>{{ $t('profile.skills') }}</b></h3>
                 <ul>
                   <li v-for="(skill, i) in profile.skillsList" :key="i">{{ skill }}</li>
                 </ul>
@@ -83,7 +83,7 @@
             <!-- TIMELINE  -->
             <transition appear name="fade-in-right">
               <div class="card-profile">
-                <h3 class="color-first"><b>{{ $t('profile.experiences') }}</b></h3>
+                <h3 class="color-second"><b>{{ $t('profile.experiences') }}</b></h3>
                 <Timeline></Timeline>
               </div>
             </transition>
@@ -151,7 +151,7 @@ export default {
 
 .profileName {
   margin-top: 10px;
-  color: var(--firstColor);
+  color: var(--fourthColor);
   font-weight: bold;
   text-align: center;
 }
