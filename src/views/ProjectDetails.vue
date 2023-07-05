@@ -9,23 +9,25 @@
               <h4 class="mt-4">{{ $t('project.location') }}</h4>
               <span>{{ projectDetails.location }}</span>
 
+              <!--  
               <h4 class="mt-4">{{ $t('project.date') }}</h4>
               <span>{{ projectDetails.date }}</span>
 
               <h4 class="mt-4">{{ $t('project.area') }}</h4>
               <span>{{ projectDetails.area }}</span>
-
+              -->
+              
               <h4 class="mt-4">{{ $t('project.description') }}</h4>
               <span>{{ projectDetails.description }}</span>
             </div>
 
             <!-- Right column::Project Media -->
             <div class="col-md-9 col-right-details">
-              <div v-for="index in 3" :key="index" class="col-animation img-container">
+              <div v-for="(photo, index) in projectDetails.photos" :key="index" class="col-animation img-container">
                 <img
-                  v-if="getImgSrc(projectDetails.mainImage)"
+                  v-if="getImgSrc(photo)"
                   class="d-block img-fluid w-100 h-auto img-project"
-                  :src="getImgSrc(projectDetails.mainImage)"
+                  :src="getImgSrc(photo)"
                   alt="image slot"
                 >
               </div>
@@ -58,9 +60,9 @@ export default {
     initProject() {
       this.projectID = this.$route.params.id
       this.projectDetails = projectsData.projects.find(obj => obj.id === this.projectID)
+      console.log(this.projectDetails)
     },
     getImgSrc(img) {
-      console.log('Img: ', img)
       if (img) {
         return require(`../assets/images/${img}`)
       }

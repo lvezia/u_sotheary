@@ -121,7 +121,7 @@ export default {
   },
   methods: {
     displayPicture(img) {
-      return require(`../assets/images/${img}`)
+      return require(`../assets/images/profile/${img}`)
     }
   }
 }

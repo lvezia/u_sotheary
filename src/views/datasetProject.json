@@ -4,90 +4,113 @@
             "name": "Daily painting",
             "location": "Phnom Penh",
             "area": "110m2",
-            "mainImage": "project1.jpg",
+            "mainImage": "daily-painting/dailypainting1.jpg",
             "description": "Paint showroom design to help customers choose the right paint for their needs. The showroom provides the paint sample and wall display that can show the customers both visually appealing and informative.",
-            "date": "2021-03-20T18:25:00.511Z"
+            "date": "2021-03-20T18:25:00.511Z",
+            "photos": [
+                "daily-painting/dailypainting1.jpg",
+                "daily-painting/dailypainting2.jpg",
+                "daily-painting/showroom1.jpg",
+                "daily-painting/showroom2.jpg",
+                "daily-painting/CAFE-LOGO.jpg"
+            ]
         },
         {
             "id": "2",
             "name": "K2 Car Accessories",
             "location": "Phnom Penh",
             "area": "120m2",
-            "mainImage": "project2.jpg",
+            "mainImage": "k2-car/k2-car-accesorrie1.jpg",
             "description": "K2 Car Accessories shop has multi-service including repair service and consultant service.",
-            "date": "2021-03-21T18:25:00.511Z"
+            "date": "2021-03-21T18:25:00.511Z",
+            "photos": [
+                "k2-car/k2-car-accesorrie1.jpg",
+                "k2-car/k2-car-accesorrie2.jpg"
+            ]
         },
         {
             "id": "3",
             "name": "KTV Room",
             "location": "Phnom Penh",
             "area": "130m2",
-            "mainImage": "project3.jpg",
+            "mainImage": "ktv/ktv1.jpg",
             "description": "KTV Room design with the classic concept using green, grey, and gold as the main colors. The room is an open space that has a singing area and a small mini-bar at the corner of the entrance. The ceiling design with the sky feature makes the room more open.",
-            "date": "2021-03-22T18:25:00.511Z"
+            "date": "2021-03-22T18:25:00.511Z",
+            "photos": [
+                "ktv/ktv1.jpg",
+                "ktv/ktv2.jpg",
+                "ktv/ktv3.jpg"
+            ]
         },
         {
             "id": "4",
             "name": "Residence House",
             "location": "Phnom Penh",
             "area": "140m2",
-            "mainImage": "project4.jpg",
+            "mainImage": "ttp-house/Livingroomview1.jpg",
             "description": "The bedroom is designed with a contemporary concept by keeping the existing floor and using wood furniture.",
-            "date": "2021-03-23T18:25:00.511Z"
+            "date": "2021-03-23T18:25:00.511Z",
+            "photos": [
+                "ttp-house/Livingroomview1.jpg",
+                "ttp-house/Livingroomview2.jpg",
+                "ttp-house/Livingroomview3.jpg"
+            ]
         },
         {
             "id": "5",
             "name": "Gold Shop",
             "location": "Phnom Penh",
             "area": "140m2",
-            "mainImage": "project4.jpg",
+            "mainImage": "gold-shop/gold-shop1.jpg",
             "description": "Gold Shop design with the modern classic concept using white, pink, and rose gold as the main colors.",
-            "date": "2021-03-23T18:25:00.511Z"
+            "date": "2021-03-23T18:25:00.511Z",
+            "photos": [
+                "gold-shop/gold-shop1.jpg",
+                "gold-shop/gold-shop2.jpg",
+                "gold-shop/gold-shop3.jpg"
+            ]
         },
         {
             "id": "6",
             "name": "Woodland Villa",
             "location": "Phnom Penh",
             "area": "140m2",
-            "mainImage": "project4.jpg",
+            "mainImage": "woodland-villa/woodland-1.jpg",
             "description": "Woodland villa design with the modern classic concept using white, brown, and gold as the main colors. The area is an open space on the ground floor.",
-            "date": "2021-03-23T18:25:00.511Z"
+            "date": "2021-03-23T18:25:00.511Z",
+            "photos": [
+                "woodland-villa/woodland-1.jpg",
+                "woodland-villa/woodland-2.jpg",
+                "woodland-villa/woodland-3.jpg"
+            ]
         },
         {
             "id": "7",
             "name": "Bistro Restaurant - Casino",
             "location": "Phnom Penh",
             "area": "140m2",
-            "mainImage": "project4.jpg",
+            "mainImage": "bistro-restaurant/BISTRORESTAURANT1.jpg",
             "description": "Bistro Restaurant is designed with the modern classic concept using dark green, white, and gold as the main colors. The area is an open space on the ground floor.",
-            "date": "2021-03-23T18:25:00.511Z"
+            "date": "2021-03-23T18:25:00.511Z",
+            "photos": [
+                "bistro-restaurant/BISTRORESTAURANT1.jpg",
+                "bistro-restaurant/BISTRORESTAURANT2.jpg",
+                "bistro-restaurant/BISTRORESTAURANT3.jpg",
+                "bistro-restaurant/BISTRORESTAURANT4.jpg"
+            ]
         },
         {
             "id": "8",
             "name": "Hotel Lobby - Casino",
             "location": "Phnom Penh",
             "area": "140m2",
-            "mainImage": "project4.jpg",
+            "mainImage": "hotel-lobby/hotel-lobby1.jpg",
             "description": "Hotel Lobby design with a modern concept using white, brown, and gold as the main colors. The area is located at the entrance of the building.",
-            "date": "2021-03-23T18:25:00.511Z"
-        },
-        {
-            "id": "9",
-            "name": "Shop house",
-            "location": "Phnom Penh",
-            "area": "140m2",
-            "mainImage": "project4.jpg",
-            "description": "Shop house design with a modern classic concept using white, brown, and gold as the main colors.",
-            "date": "2021-03-23T18:25:00.511Z"
-        },
-        {
-            "id": "10",
-            "name": "Coco Smart Dress - Shop",
-            "location": "Phnom Penh",
-            "area": "140m2",
-            "mainImage": "project4.jpg",
-            "description": "Interior design for a clothes shop",
-            "date": "2021-03-23T18:25:00.511Z"
+            "date": "2021-03-23T18:25:00.511Z",
+            "photos": [
+                "hotel-lobby/hotel-lobby1.jpg",
+                "hotel-lobby/hotel-lobby2.jpg"
+            ]
         }
     ]
 }
