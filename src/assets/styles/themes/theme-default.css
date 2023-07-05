@@ -169,6 +169,9 @@ body {
     color: red;
 }
 
+.object-fit-cover {
+    object-fit: cover;
+}
 
 .carousel-caption {
     color: var(--secondColor);

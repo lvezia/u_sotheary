@@ -12,7 +12,7 @@
               v-on:click="linkToProjectDetails(project.id)"
             >
               <img
-                class="d-block img-fluid w-100 h-auto card-img"
+                class="d-block img-fluid w-100 h-100 object-fit-cover card-img"
                 :src="getImgSrc(project.mainImage)"
                 alt="image slot"
               >
