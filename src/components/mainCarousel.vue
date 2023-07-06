@@ -27,7 +27,7 @@
             alt="image slot"
           >
           <div class="gradient-bg"></div>
-          <div class="carousel-caption d-none d-sm-block">
+          <div class="carousel-caption d-block">
             <h3>{{ item.name }}</h3>
             <p>{{ item.description }}</p>
             <router-link :to="{ name: 'ProjectDetails', params: { id: item.id} }" class="banner-btn">More details</router-link>
@@ -88,7 +88,7 @@ export default {
 .gradient-bg {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, transparent 30%, rgba(255, 255, 255, 0.9));
+    background-image: linear-gradient(180deg, transparent 20%, rgba(255, 255, 255, 1));
     position: absolute;
     top: 0;
 }
