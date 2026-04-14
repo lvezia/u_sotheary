@@ -8,12 +8,12 @@
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
-        "ajv": "^7.2.3",
-        "ajv-errors": "^2.0.1",
+        "ajv": "^8.18.0",
+        "ajv-errors": "^3.0.0",
         "ajv-formats": "^2.1.1",
-        "axios": "^0.21.1",
+        "axios": "^1.15.0",
         "bootstrap": "^4.6.0",
-        "bootstrap-vue": "^2.21.2",
+        "bootstrap-vue": "^2.23.1",
         "core-js": "^3.6.5",
         "is-buffer": "^2.0.5",
         "particles.vue": "^2.10.0",
@@ -23,12 +23,12 @@
         "vue-router": "^3.5.1"
     },
     "devDependencies": {
-        "@vue/cli-plugin-babel": "^5.0.8",
-        "@vue/cli-plugin-eslint": "^5.0.8",
+        "@vue/cli-plugin-babel": "^5.0.9",
+        "@vue/cli-plugin-eslint": "^5.0.9",
         "@vue/cli-service": "^5.0.8",
         "babel-eslint": "^10.1.0",
         "eslint": "^7.32.0",
-        "eslint-plugin-vue": "^6.2.2",
+        "eslint-plugin-vue": "^7.20.0",
         "vue-template-compiler": "^2.6.11"
     },
     "eslintConfig": {
@@ -44,6 +44,10 @@
             "parser": "babel-eslint"
         },
         "rules": {}
+    },
+    "overrides": {
+        "cross-spawn": "^7.0.6",
+        "serialize-javascript": "^7.0.5"
     },
     "browserslist": [
         "> 1%",
